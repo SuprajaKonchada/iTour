@@ -6,11 +6,58 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B7596E8F2D883605007EE312 /* AppClipSample.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = B7596E802D883604007EE312 /* AppClipSample.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7596E8D2D883605007EE312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77B8E332D81613F0083DE4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7596E7F2D883604007EE312;
+			remoteInfo = AppClipSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7596E942D883605007EE312 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				B7596E8F2D883605007EE312 /* AppClipSample.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B7596E802D883604007EE312 /* AppClipSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppClipSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77B8E3B2D81613F0083DE4E /* iTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B7596E902D883605007EE312 /* Exceptions for "AppClipSample" folder in "AppClipSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B7596E7F2D883604007EE312 /* AppClipSample */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		B7596E812D883604007EE312 /* AppClipSample */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B7596E902D883605007EE312 /* Exceptions for "AppClipSample" folder in "AppClipSample" target */,
+			);
+			path = AppClipSample;
+			sourceTree = "<group>";
+		};
 		B77B8E3D2D81613F0083DE4E /* iTour */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = iTour;
@@ -19,6 +66,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B7596E7D2D883604007EE312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B77B8E382D81613F0083DE4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B77B8E3D2D81613F0083DE4E /* iTour */,
+				B7596E812D883604007EE312 /* AppClipSample */,
 				B77B8E3C2D81613F0083DE4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B77B8E3B2D81613F0083DE4E /* iTour.app */,
+				B7596E802D883604007EE312 /* AppClipSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +104,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B7596E7F2D883604007EE312 /* AppClipSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7596E912D883605007EE312 /* Build configuration list for PBXNativeTarget "AppClipSample" */;
+			buildPhases = (
+				B7596E7C2D883604007EE312 /* Sources */,
+				B7596E7D2D883604007EE312 /* Frameworks */,
+				B7596E7E2D883604007EE312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B7596E812D883604007EE312 /* AppClipSample */,
+			);
+			name = AppClipSample;
+			packageProductDependencies = (
+			);
+			productName = AppClipSample;
+			productReference = B7596E802D883604007EE312 /* AppClipSample.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 		B77B8E3A2D81613F0083DE4E /* iTour */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B77B8E492D8161400083DE4E /* Build configuration list for PBXNativeTarget "iTour" */;
@@ -55,10 +133,12 @@
 				B77B8E372D81613F0083DE4E /* Sources */,
 				B77B8E382D81613F0083DE4E /* Frameworks */,
 				B77B8E392D81613F0083DE4E /* Resources */,
+				B7596E942D883605007EE312 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B7596E8E2D883605007EE312 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				B77B8E3D2D81613F0083DE4E /* iTour */,
@@ -80,6 +160,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					B7596E7F2D883604007EE312 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					B77B8E3A2D81613F0083DE4E = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -100,11 +183,19 @@
 			projectRoot = "";
 			targets = (
 				B77B8E3A2D81613F0083DE4E /* iTour */,
+				B7596E7F2D883604007EE312 /* AppClipSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B7596E7E2D883604007EE312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B77B8E392D81613F0083DE4E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +206,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B7596E7C2D883604007EE312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B77B8E372D81613F0083DE4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +222,81 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B7596E8E2D883605007EE312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7596E7F2D883604007EE312 /* AppClipSample */;
+			targetProxy = B7596E8D2D883605007EE312 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		B7596E922D883605007EE312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppClipSample/AppClipSample.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppClipSample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppClipSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iTour;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.iTour.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7596E932D883605007EE312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppClipSample/AppClipSample.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppClipSample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppClipSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iTour;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sample.iTour.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		B77B8E472D8161400083DE4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +475,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B7596E912D883605007EE312 /* Build configuration list for PBXNativeTarget "AppClipSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7596E922D883605007EE312 /* Debug */,
+				B7596E932D883605007EE312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B77B8E362D81613F0083DE4E /* Build configuration list for PBXProject "iTour" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
